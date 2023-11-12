@@ -24,8 +24,23 @@ nav ul {
     background-color: lightblue
   }
 
- 
-
   .mobile-nav li {
     display: block;
+  }
+  
+
+  @media screen and (min-width: 481px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 481px) {
+    .mobile-nav {
+      display: block;
+    }
+
+    .desktop-nav {
+      display: none;
+    }
   }
