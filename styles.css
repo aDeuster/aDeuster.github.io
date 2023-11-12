@@ -4,17 +4,13 @@
     box-sizing: border-box;
   }
 
-  main {
 
 
-  }
-
-
-  .desktop-nav {
+  .desktop-nav li {
     display: inline-block;
 
   }
 
-  .mobile-nav {
-    display: 
+  .mobile-nav li {
+    display: block;
   }
