@@ -4,21 +4,15 @@
     box-sizing: border-box;
   }
 
-
-  @media only screen and (max-width: 480px) {
-    /* Mobile-Stile hier */
-    .desktop-nav {
-      display: none;
-    }
-  
-    .mobile-nav {
-      display: block;
-    }
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+}
 
   .desktop-nav li {
-    display: inline-block;
+
     align-self: center;
+    text-decoration: none;
 
   }
 
