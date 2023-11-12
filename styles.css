@@ -4,6 +4,17 @@
     box-sizing: border-box;
   }
 
+  @media only screen and (max-width: 480px) {
+    /* Mobile-Stile hier */
+    .desktop-nav {
+      display: none;
+    }
+  
+    .mobile-nav {
+      display: block;
+    }
+  }
+
   .desktop-nav li {
     display: inline-block;
 
@@ -17,15 +28,4 @@
 
   .mobile-nav li {
     display: block;
-  }
-
-  @media only screen and (max-width: 480px) {
-    /* Mobile-Stile hier */
-    .desktop-nav {
-      display: none;
-    }
-  
-    .mobile-nav {
-      display: block;
-    }
   }
