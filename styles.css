@@ -4,27 +4,78 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+ 
+
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
 
-  body {
+
+ main {
+display: grid;
+grid-template-areas: 
+"searchbar searchbar search"
+"teaser teaser teaser"
+"recipes recipes blog-teaser"
+"footer footer footer";
+height: auto;
+row-gap: 15px;
+padding: 40px;
+margin-top: 70px;
 
   }
+
+  .searchbar-container {
+    grid-area: searchbar;
+    height: 50px
+  }
+  .teaser-container {
+    grid-area: teaser;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .recipe-container{
+    grid-area: recipes;
+    height: 250px;
+    padding: 20px;
+  }
+
 header {
-  margin-bottom: 1rem;
   display: grid;
 grid-template-columns: 100px 1fr;
-grid-template-rows: 50px;
+max-height: 100px;
+min-height: 70px;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99999
 }
+
+
 
 nav ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  padding: 1em;
-  font-size: 2rem;
+  padding: 0em;
+  font-size: 3rem;
   background-color: aquamarine;
   height: 100%;
+  width: 100%;
+}
+.desktop-nav li {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+
 }
 
   .desktop-nav li a {
@@ -32,17 +83,19 @@ nav ul {
     text-decoration: none;
     color: white;
     font-weight: 700;
+    align-self: center;
+    font-size: 1.5rem;
+
 
   }
+
 
   .desktop-nav li:hover {
     background-color: greenyellow;
     transition: 1s;
   }
 
-  .mobile-nav li {
-    display: block;
-  }
+
   
 
   @media screen and (min-width: 481px) {
@@ -60,4 +113,10 @@ nav ul {
     .desktop-nav {
       display: flex;
     }
+  }
+
+
+  footer {
+    grid-area: footer;
+
   }
