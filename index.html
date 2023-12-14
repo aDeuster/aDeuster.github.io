@@ -7,40 +7,61 @@
     <title>Mise en place Club</title>
 </head>
 <body>
+    <main>
     <nav class ="desktop-nav">
         <div class="desktop-nav-container">
             <div class="logo-image-container">
-                <img src="./images/logo2.svg" alt="MEPC Logo"/>
+                <img />
             </div>
         <div class="desktop-navlist-container">
         <ul class="desktop-navlist">
-            <li><a href="#">Startseite</a></li>
-            <li><a href="#">Über uns</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Burger</a></li>
+            <li><a href="#">Sandwiches</a></li>
+            <li><a href="#">Süßes</a></li>
         </ul>
+    </div>
+    <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Suchen...">
+        <button type="button" class="search-button">Suchen</button>
     </div>
     </div>
     </nav>
-
-   
-    <div class="searchbar-container">
-        
-    </div>
-    <section class="teaser-container">
-        <div class="teaser-container">
-        <h2>Teaser</h2>
-        <p>Dies ist der erste Abschnitt meiner Webseite.</p>
+    <div class="main-copy">
+    <div class="teaser-container">
+        <h2>Beliebte Rezepte</h2>
+        <p>Worauf hast du heute Lust?</p>
+        <div class="preview-container">
+            <span onClick="slideRight()" class="slider-btn"></span>
+            <span onClick="slideLeft()" class="slider-btn"></span>
         </div>
-    </section>
-
-    <section class="recipe-container">
-        <h2>Rezepte</h2>
+        </div>
+  <div class="recipes-wrapper">
+    <div class="recipe-container">
+        <h2>Vorspeisen: Highlights</h2>
         <p>Hier ist der zweite Abschnitt meiner Webseite.</p>
-    </section>
+        <div class="recipe-card-container">
 
-    <footer>
-        <p>&copy; 2023 Meine Webseite. Alle Rechte vorbehalten.</p>
-    </footer>
+        </div>
+    </div>
+    <div class="recipe-container">
+        <h2>Hauptspeisen: Highlights</h2>
+        <p>Hier ist der zweite Abschnitt meiner Webseite.</p>
+        <div class="recipe-card-container">
+            
+        </div>
+    </div>
+    <div class="recipe-container">
+        <h2>Desserts: Highlights</h2>
+        <p>Hier ist der zweite Abschnitt meiner Webseite.</p>
+    </div>
+    </div>
+<footer>
+    <div>
+        <p>Copyright</p>
+    </div>
+</footer>
+</div>
 </main>
+<script src="carousel.js"></script>
 </body>
 </html>
